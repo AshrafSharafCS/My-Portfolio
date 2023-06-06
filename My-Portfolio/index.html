@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <title>Ashraf Sharaf</title>
+
+
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="container">
+
+            <nav>
+                <h1> Ashraf Sharaf </h1>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i id="icons" class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i id="icons1" class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+
+
+            <div class="header-text">
+                <p>Programmer</p>
+                <h2>Hello, I'm <span>Ashraf</span>.</h2><br>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ----------------------------about--------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/img1.jpg">
+                </div>
+
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Dedicated computer scientist looking to advance my career through hard work, attention to detail,
+                        quick learning, and ability to fit in with any working environment. </p>
+
+                    <div class="tab-titles">
+
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+
+
+                    <div class="tab-contents active-tab" id="skills">
+
+                        <ul>
+                            <li><span>Web Development.</span><br>Website Development.</li>
+                            <li><span>App Development.</span><br>Andoid Applications.</li>
+
+
+
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internet Service Provider.</span><br>Worked with ISP providing internet services.
+                            </li>
+                            <li><span>Web Development Intern with ExpertBot Academy.</span><br>Learned new frameworks
+                                like laravel and vue, also git as VCS.</li>
+                            <li><span>Mobile Application Course with DOT Lebanon.</span><br>Build Mobile Applications
+                                using block-based programming.</li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2022</span><br>BS degree in Computer Science from the Lebanese International
+                                Universty with a 2.92 GPA.</li>
+                            <li><span>May/2022-June/2022</span><br>Certificate for completing the mobile app development
+                                course from DOT Lebanon.</li>
+
+
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ---------------------portfolio---------------- 54 -->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="img/blockprog.png">
+                    <div class="layer">
+                        <h3>Senior Project</h3>
+                        <p>Developed a website for an aluminum company where the user interact with the website, view
+                            and order products to their
+                            workshop, using HTML, CSS, javascript and PHP. </p>
+
+                    </div>
+                </div>
+
+
+                <div class="work">
+                    <img src="img/blockprog.png">
+                    <div class="layer">
+                        <h3>Concentration Game</h3>
+                        <p>Using block-based programming, I developed a concentration game where cards are laid face
+                            down and the player should flip two cards that have to match.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="work">
+                    <img src="img/blockprog.png">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>Developed a portfolio website and hosted it using HTML, CSS, and Javascript. </p>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <a href="https://github.com/AshrafSharafCS/" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------------------------contact------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1><br>
+                    <p><i class="fa-solid fa-envelope"></i> ashrafsharafcs@gmail.com</p><br>
+                    <p><i class="fa-solid fa-phone"></i> +961 76824199</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ashraf.sharaf.754"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ashraf_sh16/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ashraf-sharaf-408808232/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AshrafSharafCS/"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=96176824199&text&type=phone_number&app_absent=0"><i
+                                class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+
+                    <a href="img/Ashraf Sharaf-Resume.pdf" class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright fa-fade"></i> Ashraf Sharaf 2023</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+
+
+    </script>
+
+    <script>
+        var sidem = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidem.style.right = "0";
+        }
+
+        function closemenu() {
+            sidem.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzZkPiXrQ-lqthqdyeEa_XMdiz4dFkPrxiL82AK3_4yDPrYMB8iyxp9qxPUH1z7e4a0/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+
+</body>
+
+</html>
